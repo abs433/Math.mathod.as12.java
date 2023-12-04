@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java 21to25 chapter</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+// // Q No :1 ===>
+         document.write("Q No :1 <br>");
+
+         var firstName = prompt("Enter first Nme ");
+         var lastName = prompt(" enter last name ");
+         var fulName = firstName + lastName ;
+         console.log(fulName);
+         document.write("Full Name : " + fulName +"<br>");
+
+  
+//  // Q No :2 ===>
+ document.write("Q No :2 <br>");
+         var mobile = prompt("enter your favorite mobile phone model");
+         document.write("Your Favorite Mobile Phone : " +mobile +"<br>");
+         var mobl = mobile.length;
+         var length = " Lenght of string :" + mobl ;
+         console.log(length);
+         document.write(length);
+
+
+// // Q No :3 ===>
+ document.write("<br> Q No :3 <br>");
+
+
+         var contryName = "pakistan";
+         document.write("sring : "+ contryName +"<br>");
+         var lgnt = contryName.indexOf( prompt("find the index of any latter from Pakistan"));
+         console.log("index of your later :"+ lgnt);
+         document.write("index of your later :" +lgnt + "<br>")
+
+// // Q No :4 ===>
+ document.write(" <br> Q No :4 <br>");
+
+         var helo = "Hello World";
+         document.write("sring : "+ helo +"<br>");
+         var ind = helo.lastIndexOf("l");
+         console.log(ind);
+         document.write("Last index of 'l' : " + ind +"<br>");
+         var lgnt1 = helo.lastIndexOf( prompt("find the index of any latter from Hello World"));
+         console.log("index of your later :"+ lgnt1);
+          document.write("Last index of your later :"+lgnt1);
+
+
+
+// Q No :5 ===>
+document.write(" <br> Q No :5 <br>");
+
+
+// // Q No :6 ===>
+ document.write(" <br> Q No :6 <br>");
+
+ var firstName = prompt("Enter first Nme ");
+          var fulName = firstName + lastName ;
+          console.log(fulName);
+          var lastName = prompt(" enter last name ");
+          document.write("Full Name : " + fulName +"<br>");
+
+
+// // Q No :7 ===>
+document.write(" <br><br> Q No :7 <br>");
+
+             var    city = "Hayderabad";
+             console.log(city );
+             document.write("City :"+ city +"<br>");
+         for(var i = 0; i < city.length; i++){
+             if (city.slice(i,i + 6 )==="Hayder"){
+                 city = city.slice(0,i) + "Islam" + city.slice(i + 6);
+             }
+         }
+         console.log("After replacement :"+city);
+         document.write("After replacement :"+city);
+
+
+// // Q No :8 ===>
+ document.write(" <br> <br> Q No :8 <br>");
+
+         var text = " Ali and Sami are best friends. Thay play cricket and football together ";
+         document.write(text + "<br> <br>");
+         for(var i = 0; i < text.length; i++){
+             if (text.slice(i,i + 3 )==="and"){
+                 text = text.slice(0,i) + "&" + text.slice(i + 3);
+             }
+         }
+         console.log("After replacement :"+text);
+         document.write(" After replacement :" + text);
+
+
+// // Q No :9 ===>
+ document.write(" <br> <br> Q No :9 <br>");
+
+         var nmbr = 472 ;
+         console.log(nmbr);
+         document.write("Value : "+ nmbr +"<br>");
+         var check = typeof(nmbr);
+         console.log(check);
+         document.write("Type : "+ check +"<br>");
+         var str = nmbr.toString();
+         console.log(str);
+         document.write("Value : "+ str +"<br>");
+         console.log(typeof(str));
+         document.write("Type : "+ typeof(str));
+
+
+
+// // Q No :10 ===>
+document.write(" <br> <br> Q No :10 <br>");
+
+         var nmme = prompt("Enter your name ");
+         var name = nmme.toUpperCase();
+         console.log(name);
+         document.write(name);
+
+   
+
+// Q No :11 ===>
+document.write(" <br> <br> Q No :11 <br>");
+        var a = prompt("Enter your name ")
+        var c = a.slice(0, 1);
+        var d = c.toUpperCase()+a.slice(1,a.length);
+        console.log( "this is first letter capital===>", d);
+       document.write( "this is first letter capital===>", d);
+
+
+
+       
+  </script>
+</body>
+</html>
