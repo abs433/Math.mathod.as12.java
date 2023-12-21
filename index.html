@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+// //Q No : 1
+         document.write("<h1> Q No : 1 </h1>")
+         var date = new Date();
+         alert(date);
+        document.write(" Crrunt Date : ",date);
+
+
+
+
+// //Q No :2 
+     document.write("<h1> Q No : 2 </h1>")
+ var mnt = date.getMonth();
+ var montharr = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+ alert("current moth : "+montharr[mnt]);
+ // console.log(mnt);
+ // alert(mnt);
+     document.write(" current moth : " + montharr[mnt]);
+
+
+
+ //Q No : 3 
+     document.write("<h1> Q No : 3 </h1>")
+ var day = date.getDay();
+    //alert(day)
+ var dayarr = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday',]
+ var dayslice = (dayarr[day]);
+ console.log(dayarr[day]);
+
+ console.log(dayslice);
+     var aaa = dayslice.slice(0,3);
+     console.log("To day is  "+aaa);
+     document.write("To day is : " + aaa);
+
+
+
+// // Q No : 4 
+         document.write("<h1> Q No : 4 </h1>")
+ var day = date.getDay();
+ // document.write(dayslice)
+     if (dayslice === "Sunday") {
+         document.write("“It’s Fun day”")
+        
+     } else {
+         document.write("No fun day")
+     }
+
+
+
+// // Q No : 5
+   document.write("<h1> Q No : 5 </h1>")
+     var today = date.getDate();
+     console.log(today);
+     if (today < "15"){
+         document.write("First fifteen days of the month ")
+     }else{
+         document.write("Last fifteen days of the month ")
+     }
+
+
+
+
+
+// // Q No : 6 
+     document.write("<h1> Q No : 6 </h1>")
+ var todayDate = new Date();
+ var Todaymilli = todayDate.getTime();
+ var todayMin = todayDate.getMinutes();
+ var diff = Todaymilli - todayMin;
+ var diffMin = diff/(1000*60*60);
+ var accurateMin = Math.floor(diffMin);
+ document.write("Current Date: " + todayDate);
+ document.write("<br> Elapsed milliseconds since midnight, Jan 1, 1970: " + Todaymilli);
+ document.write("<br> Elapsed minutes since midnight, Jan 1, 1970: " + accurateMin)
+
+
+
+
+
+// Q No : 7
+
+    document.write("<h1> Q No : 7 </h1>");
+    var weather = date.getHours();
+    console.log(weather);
+    if (weather < "12") {
+        document.write("It's AM ")
+    } else {
+        document.write("It's PM ")
+     }
+
+//  // Q No : 8 
+          document.write("<h1> Q No : 8 </h1>")
+     
+ var dueDate = new Date(2023,11,31)//.toLocaleDateString(now);
+ console.log("Later Date : " + dueDate);
+     document.write("Later Date : " + dueDate);
+
+
+
+
+
+// Q No : 9 
+ 
+    document.write("<h1> Q No : 9 </h1>")
+
+var ramdan = new Date("june 18 ,2015");
+console.log(ramdan);
+var gtday = ramdan.getTime();
+var gtday1 = date.getTime();
+var difrt = gtday1 - gtday;
+var corctday = Math.floor(difrt/(1000*3600*24))
+console.log(corctday);
+    document.write(corctday," days have passed since 1st Ramdan,2015");
+
+
+
+
+// Q No : 10 
+        document.write("<h1> Q No : 10 </h1>")
+var q10 = new Date("2015,12,05 ,22:50:16");
+var onrefrnce = q10.getTime();
+console.log("On reference date ",q10);
+console.log(gtday1);
+var rfence = gtday1 - onrefrnce;
+var scndrefrance = (Math.floor(rfence/(1000)));
+console.log(scndrefrance, " second had passed since begining  of 2015");
+    document.write(scndrefrance, " second had passed since begining  of 2015");
+
+
+
+
+// Q No 11 
+            document.write("<h1> Q No : 11 </h1>")
+document.write("Current Date : ",date);
+var d1 = new Date();
+    var d = d1.setHours(21) ;
+    document.write("<br>",d1, 'hour');
+console.log(date,'hour');
+
+
+
+
+// Q No :12
+          document.write("<h1> Q No : 12 </h1>")
+          var dte1 = new Date();
+    document.write("Current Date : ", dte1);
+var dat1 = dte1.setFullYear(prompt("enter years to set"));
+console.log(dat1);
+
+
+
+
+
+//     // Q No : 13 
+     document.write("<h1> Q No :13 </h1>")
+
+ var dob = new Date(prompt(" Enter your birth date ", "jun 05,2000"));
+ var full1 = (dob.getFullYear());
+     var mnth1 = (dob.getMonth());
+         var day1 = (dob.getDay());
+             var dte1 = (dob.getDate());
+
+        
+
+ console.log(day1);
+
+ var today = new Date();
+ var full = (today.getFullYear());
+     var month = (today.getMonth());
+         var day = (today.getDay());
+             var dte = (today.getDate());
+
+ var ageYear = full - full1;
+     var ageMonth = month - mnth1;
+         var ageDay = day - day1;
+             var ageDte = dte - dte1;
+
+ console.log(ageYear,"Years",ageMonth,"Month",ageDte,'Days');
+     document.write("Your Age is : ",ageYear, " Years ", ageMonth , " Month " , ageDte , ' Days');
+
+
+//   var yourage =Math.floor(age/(1000*3600*24)/3650.25);
+//   var abs = (Math.floor(age / (1000 * 3600 * 24) / 365.25));
+  
+
+    // console.log(Math.floor(age / (1000 * 3600 * 24) ));
+
+ // Q No 14: 
+    document.write("<h1> Q No : 14 </h1>")
+
+    document.write("<h1> K-Electric bill </h1>");
+
+
+    var yourName = prompt("Enter Customer Name", "Muhammad Abu bakar");
+    document.write("Customer Name" + " : " + yourName);
+    var monthName = ['January', 'February', 'March', 'April', 'May', 'Jun', 'July', 'August', 'September', 'October', 'November', 'December']
+    var mon = new Date();
+    var mone = monthName[mon.getMonth()]
+    
+    document.write("<br> Current Month" + " : " + mone)
+    var numunit = +prompt("Enter Number of units")
+    
+    document.write("<br> Number of units" + " : " + numunit)
+    var num = numunit.pars
+    var price = 16;
+    
+    document.write("<br> Number of units" + " : " + price)
+    var sum = numunit * price
+    
+    document.write("<br> <br> Net Amount Payable (within Due Date)" + " : " + sum)
+    var late = 350;
+    var sumlate = sum + late
+    document.write("<br>")
+    document.write("Laite Payment Surcharge" + " : " + late)
+    document.write("<br>")
+    document.write("Gross Amount Payable (after Due Date)" + " : " + sumlate)
+
+
+
+    </script>
+</body>
+</html>
